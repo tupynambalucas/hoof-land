@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <title>Hoof | Land</title>
+    <!-- Fontes -->
+    <link rel="stylesheet" href="https://use.typekit.net/wbm2uhg.css">
+
+    <!-- Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Js -->
+    <script src="./lib/rellax.min.js"></script>
+    <script src="./lib/aos.js"></script>
+    <script defer src="./lib/all.js"></script>
+
+    <!-- Css -->
+    <link rel="stylesheet" href="index.css">
+    <link href="./lib/aos.css" rel="stylesheet">
+
+    <!-- PIXI -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/6.5.1/browser/pixi.js" integrity="sha512-/Q7zw+BYCs3qyb7ZTzoZn9DB63zuDMGaQjz3BV6Ug6cbtY2cLFon1/rgP4SadB8zFx6yseAymKymn+McinbwJA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- MidnightJs -->
+    <script src="https://cdn.jsdelivr.net/combine/npm/jquery@1.11,npm/midnight.js@1.1"></script>
+    <script>      
+        // Start midnight
+        $(document).ready(function(){
+          // Change this to the correct selector.
+          $('nav.fixed').midnight();
+        });
+    </script>
+
+    <!-- Loading -->
+    <script src="js/loading.js"></script>
+      
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="lib/animate.js"></script>
+</head>
+<body>
+    <section class="oms">
+      <div class="oms-container">
+        <div class="oms-container-item">
+          <p class="montserrat-regular">Segundo a OMS (Organização Mundial da Saúde), o 
+            Brasil tem mais de 30 milhões de animais 
+            abandonados, todos na rua, passando fome, sem 
+            uma família e sem alguém para dar amor. Apesar de 
+            muitas instituições independentes terem dezenas de 
+            animais para doação, essa informação muitas vezes 
+            não chega em quem de fato gostaria de adotar, e a 
+            ausência de informação sobre a saúde do bichinho 
+            muitas vezes é uma pedra no caminho de quem 
+            gostaria de adotar um animal. </p>
+        </div>
+        <div class="oms-container-item">
+          <hr>
+        </div>
+        <div class="oms-container-item">
+          <img src="img/banner.png" alt="">
+        </div>
+      </div>
+    </section>
+    <header class="header" id="hoof-header">
+      <img src="img/logo.png" alt="">
+    </header>
+    <section class="quem-somos">
+        <div class="quem-somos-container">
+          <div class="hoof-oque">
+            <h1 class="montserrat-bold">O QUE É A HOOF ?</h1>
+            <p style="margin-top: 2vh;" class="montserrat-regular">Um projeto <span style="color: #C4007A;" class="montserrat-light">MoonLabs</span>.</p>
+            <p class="montserrat-regular">A Hoof é uma plataforma que faz a conexão entre <span class="montserrat-light" style="color: #0f0f0f;">adotante</span> e <span class="montserrat-light" style="color: #E4B73E;">adotados</span>.</p>
+            <button>nossa missão</button>
+          </div>
+          <div class="conecxao">
+            <div id="bola-1" class="bola-conecxao"></div>
+            <hr>
+            <div id="bola-2" class="bola-conecxao"></div>
+          </div>
+        </div>
+    </section>
+    <section class="como-ajudar">
+        <div class="ajudar-container">
+          <h1 class="montserrat-bold">Como posso ajudar?</h1>
+          <p class="montserrat-regular">Nos siga em nossas redes e fique atento as novidas que virão em breve.</p>
+        </div>
+        <div class="dog" id="dog"></div>
+    </section>
+    <section class="nossa-equipe">
+        <div class="nossa-equipe-container">
+            <p class="montserrat-bold equipe-titulo">NOSSA EQUIPE</p>
+            <p class="design montserrat-regular">Somos designers e desenvolvedores emergentes, multidisciplinares e independentes. A nossa paixão é o apoio e a promoção da criatividade em causas humanitárias.</p>
+            <div class="flexbox">
+                <div id="bola1" class="bola"></div>
+                <div id="bola2" class="bola"></div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+      <div class="footer-flex">
+          <div class="footer-item">
+              <h1 class="montserrat-bold footer-titulo">Hoof</h1>
+          </div>
+          <div class="footer-item footer-contato">
+              <h1 class="montserrat-bold">Contato</h1>
+              <hr>
+              <a class="montserrat-regular">moonlabs.team@gmail.com</a>
+              <a class="montserrat-regular" href="https://wa.me/+5548996625754" target="_blank">Whatsapp</a>
+              <a class="montserrat-regular" href="https://t.me/Tupyo" target="_blank">Telegram</a>
+
+          </div>
+          <div class="footer-item">
+              <img src="img/logo.png" alt="">
+          </div>
+      </div>
+  </footer>
+  <script src="js/dog.js" type="module"></script>
+  <script>
+    if (window.innerWidth > 700) {
+          // When the user scrolls the page, execute myFunction 
+    window.onscroll = function() {myFunction()};
+
+    // Get the header
+    var header = document.getElementById("hoof-header");
+
+    // Get the offset position of the navbar
+    var sticky = header.offsetTop;
+
+    // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    } 
+    }
+  </script>
+</body>
+</html>

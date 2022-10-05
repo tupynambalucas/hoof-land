@@ -1,0 +1,606 @@
+*{margin: 0;}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.montserrat-regular{
+    font-family: montserrat,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.montserrat-thin{
+    font-family: montserrat,sans-serif;
+    font-weight: 100;
+    font-style: normal;  
+}
+.montserrat-light{
+    font-family: montserrat,sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+.montserrat-medium{
+    font-family: montserrat,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.montserrat-bold{
+    font-family: montserrat,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Header */
+.header img{
+    height: 8vh;
+    position: relative;
+    top: 50%;
+    left: 10vw;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+.content {
+    padding: 16px;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+.sticky + .content {
+    padding-top: 102px;
+}
+
+/* Sections */
+.header {
+    height: 10vh;
+    background: #0f0f0f;
+    align-items: center;
+    align-content: center;
+    z-index: 1000000;
+    overflow: hidden;
+}
+.oms{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background: #E4E4E4;
+    overflow: hidden;
+}
+.quem-somos{
+    height: 120vh;
+    width: 100vw;
+    background: #30347C;
+    overflow: hidden;
+}
+.como-ajudar{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background: #009DE0;
+    overflow: hidden;
+}
+.nossa-equipe{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background: #C4007A;
+    overflow: hidden;
+}
+footer{
+    position: relative;
+    width: 100vw;
+    height: 25vh;
+    background: #E4E4E4;
+    z-index: 1000000;
+    overflow: hidden!important;
+    overflow: hidden;
+}
+
+/* OMS */
+.oms-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 70vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+}
+.oms-container-item{
+    margin: 5vh;
+}
+.oms-container p{
+    font-size: 3vh;
+    width: 40vw;
+    color: #30347C;
+}
+.oms-container hr{
+    width: 0.2vw;
+    background: #30347C;
+    height: 20vh;
+}
+.oms-container img{
+    height: 12.5vh;
+}
+
+/* Quem somos */
+.quem-somos-container{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    align-content: center;
+    position: absolute;
+    top: 145vh;
+    left: 17vw;
+}
+.conecxao{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    margin-right: 5vw;
+}
+.conecxao hr{
+    width: 12.5vw;
+    height: 0.2vh;
+    background: snow;
+    border: 0;
+}
+.bola-conecxao{
+    height: 20vh;
+    width: 20vh;
+    background: #0f0f0f;
+    border-radius: 50%;
+    background-size: cover;
+    border: #0f0f0f 0.5vh solid;
+    -webkit-box-shadow: 0px 0px 53px -1px rgba(0,0,0,0.37);
+    -moz-box-shadow: 0px 0px 53px -1px rgba(0,0,0,0.37);
+    box-shadow: 0px 0px 53px -1px rgba(0,0,0,0.37);
+}
+#bola-1{
+    background-image: url('img/conecxao/person.jpg');
+    background-position-x: -5vh;
+}
+#bola-2{
+    background-image: url('img/conecxao/dog.jpg');
+    background-position-y: -4vh;
+}
+.hoof-oque{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    color: #E4E4E4;
+    z-index: 10;
+}
+.hoof-oque h1{
+    font-size: 4vh;
+    background: #0f0f0f;
+    width: fit-content;
+    padding: 1vh;
+}
+.hoof-oque p{
+    font-size: 3vh;
+    margin-top: 2vh;
+}
+
+.hoof-oque button{
+    font-size: 3vh;
+    margin-top: 10vh;
+    color: #30347C;
+    width: 15vw;
+    height: 8vh;
+    border: none;
+    background: #E4E4E4;
+    border-radius: 5vh;
+    cursor: pointer;
+
+}
+
+/* Como ajudar */
+.ajudar-container{
+    position: absolute;
+    top: 35vh;
+    left: 17vw;
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    color: #E4E4E4;
+
+}
+.ajudar-container h1{
+    text-transform: uppercase;
+    font-size: 4vh;
+    background: #0f0f0f;
+    width: fit-content;
+    padding: 1vh;
+}
+.ajudar-container p{
+    font-size: 3vh;
+    margin-top: 2vh;
+}
+/* Nossa equipe */
+.nossa-equipe-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    color: snow;
+}
+.bola{
+    height: 25vh;
+    width: 25vh;
+    border-radius: 50%;
+    margin-right: 6vh;
+    background: gray;
+    cursor: pointer;
+}
+.equipe-titulo{
+    background: #0f0f0f;
+    color: snow;
+    padding: 1vh;
+    font-size: 1.5vh;
+    width: fit-content;
+}
+.design{
+    margin-top: 4vh;
+    color: snow;
+    width: 50vw;
+    font-size: 4vh;
+    
+}
+.flexbox{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5vh;
+}
+#bola1{
+    background-image: url(../img/logos/tupy.png);
+    background-size: contain;
+}
+#bola2{
+    background-image: url(../img/logos/tupijara.png);
+    background-size: contain;
+    background-position-y: 1vw;
+}
+
+/* Footer */
+.footer-flex{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  
+  .footer-item{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 5vh;
+  }
+  .footer-item img{
+    height: 12.5vh;
+  }
+  .footer-item a{
+    margin-bottom: 0.4vh;
+  }
+  .footer-item hr{
+    margin-top: 1vh;
+    margin-bottom: 1.5vh;
+    height: 0.3vh;
+    border: none;
+    background: #30347C;
+  }
+  .footer-contato hr{
+    width: 4vw;
+  }
+  .footer-agradecimento hr{
+    width: 7vw;
+  }
+  .footer-item h1{
+    font-size: 2vh;
+    color: #C4007A;
+  
+  }
+  
+  .footer-item a{
+    text-decoration: none;
+    color: #30347C;
+    font-size: 1.5vh;
+  
+  }
+
+
+
+/* Mobile */
+@media screen and (max-width: 700px) {
+    .header{
+        top: 0;
+        left: 0;
+        width: 100vw;
+        position: fixed;
+    }
+    .oms{
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        background: #E4E4E4;
+        overflow: hidden;
+    }
+    .quem-somos{
+        position: relative;
+        height: 80vh;
+        width: 100vw;
+        background: #30347C;
+        overflow: hidden;
+    }
+    .como-ajudar{
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        background: #009DE0;
+        overflow: hidden;
+    }
+    .nossa-equipe{
+        position: relative;
+        height: 60vh;
+        width: 100vw;
+        background: #C4007A;
+        overflow: hidden;
+    }
+    footer{
+        position: relative;
+        width: 100vw;
+        height: 20vh;
+        background: #E4E4E4;
+        z-index: 1000000;
+        overflow: hidden!important;
+        overflow: hidden;
+    }
+    /* Header */
+    .header img{
+        height: 6vh;
+        position: relative;
+        top: 50%;
+        left: 22.5vw;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+    }
+    /* Oms */
+    .oms-container{
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+    .oms-container-item{
+        margin: 3vh;
+    }
+    .oms-container p{
+        font-size: 2vh;
+        width: 70vw;
+        color: #30347C;
+    }
+    .oms-container hr{
+        width: 40vw;
+        background: #30347C;
+        height: 0.2vh;
+    }
+    .oms-container img{
+        height: 12.5vh;
+    }
+
+    /* Quem somos */
+    .quem-somos-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+    }
+    .conecxao{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+        margin-top: 10vw;
+        margin-left: 5vw;
+    }
+    .conecxao hr{
+        width: 16vw;
+        height: 0.2vh;
+        background: snow;
+        border: 0;
+    }
+    .bola-conecxao{
+        height: 15vh;
+        width: 15vh;
+        background: #0f0f0f;
+        border-radius: 50%;
+        background-size: cover;
+        border: #0f0f0f 0.5vh solid;
+        -webkit-box-shadow: 0px 0px 53px -1px rgba(0,0,0,0.37);
+        -moz-box-shadow: 0px 0px 53px -1px rgba(0,0,0,0.37);
+        box-shadow: 0px 0px 53px -1px rgba(0,0,0,0.37);
+    }
+    #bola-1{
+        background-image: url('img/conecxao/person.jpg');
+        background-position-x: -3.6vh;
+    }
+    #bola-2{
+        background-image: url('img/conecxao/dog.jpg');
+        background-position-y: -4vh;
+    }
+    .hoof-oque{
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+        color: #E4E4E4;
+        z-index: 10;
+    }
+    .hoof-oque h1{
+        font-size: 3vh;
+        background: #0f0f0f;
+        width: fit-content;
+        padding: 1vh;
+    }
+    .hoof-oque p{
+        font-size: 3vh;
+        margin-top: 2vh;
+    }
+
+    .hoof-oque button{
+        font-size: 3vh;
+        margin-top: 10vh;
+        color: #30347C;
+        width: 45vw;
+        height: 8vh;
+        display: none;
+        border: none;
+        background: #E4E4E4;
+        border-radius: 5vh;
+        cursor: pointer;
+
+    }
+    /* Como ajudar */
+    .ajudar-container{
+        position: absolute;
+        top: 15vh;
+        left: 17vw;
+        width: 35vw;
+        display: flex;
+        flex-direction: column;
+        color: #E4E4E4;
+
+    }
+    .dog canvas{
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        bottom: 0!important;
+    }
+    .ajudar-container h1{
+        text-transform: uppercase;
+        font-size: 4vh;
+        background: #0f0f0f;
+        width: fit-content;
+        padding: 1vh;
+    }
+    .ajudar-container p{
+        font-size: 3vh;
+        margin-top: 2vh;
+        width: 70vw;
+    }
+    /* Nossa equipe */
+    .nossa-equipe-container{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        color: snow;
+    }
+    .bola{
+        height: 10vh;
+        width: 10vh;
+        border-radius: 50%;
+        margin-right: 2vh;
+        background: gray;
+        cursor: pointer;
+    }
+    .equipe-titulo{
+        background: #0f0f0f;
+        color: snow;
+        padding: 1vh;
+        font-size: 1.5vh;
+        width: fit-content;
+    }
+    .design{
+        margin-top: 4vh;
+        color: snow;
+        width: 80vw;
+        font-size: 2vh;
+        
+    }
+    .flexbox{
+        display: flex;
+        flex-direction: row;
+        margin-top: 5vh;
+    }
+    #bola1{
+        background-image: url(../img/logos/tupy.png);
+        background-size: contain;
+    }
+    #bola2{
+        background-image: url(../img/logos/tupijara.png);
+        background-size: contain;
+        background-position-y: 1.4vw;
+    }
+    /* Footer */
+    .footer-flex{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+  
+    .footer-item{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin: 2vh;
+    }
+    .footer-item img{
+        height: 6vh;
+    }
+    .footer-item a{
+        margin-bottom: 0.4vh;
+    }
+    .footer-item hr{
+        margin-top: 1vh;
+        margin-bottom: 1.5vh;
+        height: 0.3vh;
+        border: none;
+        background: #30347C;
+    }
+    .footer-contato hr{
+        width: 4vw;
+    }
+    .footer-agradecimento hr{
+        width: 7vw;
+    }
+    .footer-item h1{
+        font-size: 1.5vh;
+        color: #C4007A;
+    
+    }
+    
+    .footer-item a{
+        text-decoration: none;
+        color: #30347C;
+        font-size: 1vh;
+    
+    }
+}
